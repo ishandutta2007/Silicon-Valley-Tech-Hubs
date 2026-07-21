@@ -284,53 +284,11 @@
             color: var(--text-primary);
         }
 
-        /* Custom pulsing marker */
+        /* Custom pulsing marker wrapper */
         .custom-marker {
-            width: 14px;
-            height: 14px;
-            background-color: var(--accent-glow);
-            border: 2px solid #ffffff;
-            border-radius: 50%;
-            box-shadow: 0 0 0 0 rgba(var(--accent-glow-rgb), 0.7);
-            animation: pulse 1.8s infinite;
-            transition: var(--transition);
-        }
-
-        .custom-marker.active-marker {
-            background-color: var(--accent-success);
-            transform: scale(1.3);
-            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-            animation: pulse-success 1.8s infinite;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(var(--accent-glow-rgb), 0.7);
-            }
-            70% {
-                transform: scale(1);
-                box-shadow: 0 0 0 8px rgba(var(--accent-glow-rgb), 0);
-            }
-            100% {
-                transform: scale(0.95);
-                box-shadow: 0 0 0 0 rgba(var(--accent-glow-rgb), 0);
-            }
-        }
-
-        @keyframes pulse-success {
-            0% {
-                transform: scale(1.15);
-                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-            }
-            70% {
-                transform: scale(1.3);
-                box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
-            }
-            100% {
-                transform: scale(1.15);
-                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
-            }
+            background: none !important;
+            border: none !important;
+            box-shadow: none !important;
         }
 
         /* Responsive Breakpoints */
@@ -668,7 +626,7 @@
             
             card.innerHTML = `
                 <div class="hub-title">
-                    <span><span style="color: ${props.color}; margin-right: 8px;">●</span>${props.name}</span>
+                    <span><span style="display: inline-block; width: 12px; height: 12px; background-color: ${props.color}; margin-right: 8px; vertical-align: middle; border-radius: 2px;"></span>${props.name}</span>
                     <span class="hub-tag" style="background: ${props.color}25; color: ${props.color}; border: 1px solid ${props.color}50;">#${props.order}</span>
                 </div>
                 <div class="hub-companies-title">Major Companies</div>
