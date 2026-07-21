@@ -163,18 +163,18 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
 
 | City | Major Companies |
 | :--- | :--- |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #10b981; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **San Mateo** | Snowflake, Roblox |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #06b6d4; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Fremont** | Tesla Factory, Lam Research |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #6366f1; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Redwood City** | Oracle*, Box |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #0ea5e9; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Menlo Park** | Meta (Facebook) |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #f59e0b; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Palo Alto** | Tesla, HP |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #8b5cf6; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Milpitas** | KLA Corporation |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #ec4899; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Mountain View** | Google, Intuit |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #f43f5e; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Sunnyvale** | LinkedIn, Yahoo! |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #f97316; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Santa Clara** | Nvidia, Intel, AMD |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #22d3ee; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **San Jose** | Cisco, Adobe |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #84cc16; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Cupertino** | Apple |
-| <span style="display: inline-block; width: 14px; height: 14px; background-color: #d946ef; margin-right: 6px; vertical-align: middle; border-radius: 2px;"></span> **Los Gatos** | Netflix |
+| 🟩 **San Mateo** | Snowflake, Roblox |
+| 🟦 **Fremont** | Tesla Factory, Lam Research |
+| 🟪 **Redwood City** | Oracle*, Box |
+| 🟦 **Menlo Park** | Meta (Facebook) |
+| 🟨 **Palo Alto** | Tesla, HP |
+| 🟪 **Milpitas** | KLA Corporation |
+| 🟥 **Mountain View** | Google, Intuit |
+| 🟥 **Sunnyvale** | LinkedIn, Yahoo! |
+| 🟧 **Santa Clara** | Nvidia, Intel, AMD |
+| 🟦 **San Jose** | Cisco, Adobe |
+| 🟩 **Cupertino** | Apple |
+| 🟪 **Los Gatos** | Netflix |
 
 *\*Note: Oracle moved its official headquarters to Austin, Texas, but maintains a significant historic presence in Redwood City.*
 

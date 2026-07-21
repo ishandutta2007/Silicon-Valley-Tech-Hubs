@@ -559,36 +559,19 @@
         const markersMap = {};
         const cardElements = {};
 
-        // Custom marker setup with dynamic city colors
-        const createMarkerIcon = (color, isActive = false) => {
-            const size = isActive ? 18 : 14;
-            const borderGlow = isActive 
-                ? `box-shadow: 0 0 12px ${color}, 0 0 20px ${color}; transform: scale(1.25);` 
-                : `box-shadow: 0 0 8px ${color};`;
-            return L.divIcon({
-                className: `custom-marker ${isActive ? 'active-marker' : ''}`,
-                html: `<div style="
-                    width: ${size}px; 
-                    height: ${size}px; 
-                    background-color: ${color}; 
-                    border: 2px solid #ffffff; 
-                    border-radius: 50%;
-                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                    ${borderGlow}
-                "></div>`,
-                iconSize: [size, size],
-                iconAnchor: [size/2, size/2]
-            });
-        };
-
-        // Add GeoJSON Layer to Map
+        // Add GeoJSON Layer to Map using native vector circleMarkers
         const geojsonLayer = L.geoJSON(geojsonData, {
             pointToLayer: function(feature, latlng) {
-                const id = feature.id;
-                const marker = L.marker(latlng, {
-                    icon: createMarkerIcon(feature.properties.color, false)
+                const props = feature.properties;
+                const marker = L.circleMarker(latlng, {
+                    radius: 8,
+                    fillColor: props.color,
+                    color: "#ffffff",
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.95
                 });
-                markersMap[id] = marker;
+                markersMap[feature.id] = marker;
                 return marker;
             },
             onEachFeature: function(feature, layer) {
@@ -605,7 +588,7 @@
                 
                 layer.bindPopup(popupContent, {
                     closeButton: false,
-                    offset: L.point(0, -6)
+                    offset: L.point(0, -3)
                 });
 
                 // Update UI on marker selection
@@ -652,7 +635,11 @@
                 const prevMarker = markersMap[currentlyHighlighted];
                 const prevFeature = geojsonData.features.find(f => f.id === currentlyHighlighted);
                 if (prevMarker && prevFeature) {
-                    prevMarker.setIcon(createMarkerIcon(prevFeature.properties.color, false));
+                    prevMarker.setStyle({
+                        radius: 8,
+                        weight: 2,
+                        color: "#ffffff"
+                    });
                 }
                 
                 const prevCard = cardElements[currentlyHighlighted];
@@ -665,7 +652,11 @@
             const marker = markersMap[id];
             const currentFeature = geojsonData.features.find(f => f.id === id);
             if (marker && currentFeature) {
-                marker.setIcon(createMarkerIcon(currentFeature.properties.color, true));
+                marker.setStyle({
+                    radius: 12,
+                    weight: 3,
+                    color: "#ffffff"
+                });
             }
             
             const card = cardElements[id];
@@ -690,7 +681,11 @@
                 const prevMarker = markersMap[currentlyHighlighted];
                 const prevFeature = geojsonData.features.find(f => f.id === currentlyHighlighted);
                 if (prevMarker && prevFeature) {
-                    prevMarker.setIcon(createMarkerIcon(prevFeature.properties.color, false));
+                    prevMarker.setStyle({
+                        radius: 8,
+                        weight: 2,
+                        color: "#ffffff"
+                    });
                 }
                 
                 const prevCard = cardElements[currentlyHighlighted];
