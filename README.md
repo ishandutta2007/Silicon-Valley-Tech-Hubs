@@ -22,6 +22,19 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
     {
       "type": "Feature",
       "properties": {
+        "name": "San Francisco",
+        "companies": "Airbnb, Lyft, Shopify",
+        "marker-color": "#a855f7",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4194, 37.7749]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "San Mateo",
         "companies": "Snowflake, Roblox",
         "marker-color": "#2ecc71",
@@ -114,7 +127,7 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "type": "Feature",
       "properties": {
         "name": "Sunnyvale",
-        "companies": "Amazon, LinkedIn, Yahoo!",
+        "companies": "Amazon, LinkedIn, Yahoo!, Uber",
         "marker-color": "#e91e63",
         "marker-size": "medium"
       },
@@ -181,6 +194,7 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
 
 | City | Major Companies |
 | :--- | :--- |
+| 🟪 **San Francisco** | Airbnb, Lyft, Shopify |
 | 🟩 **San Mateo** | Snowflake, Roblox |
 | 🟦 **Fremont** | Tesla Factory, Lam Research |
 | 🟪 **Redwood City** | Oracle*, Box |
@@ -188,7 +202,7 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
 | 🟨 **Palo Alto** | Tesla, HP |
 | 🟧 **Milpitas** | KLA Corporation |
 | 🟥 **Mountain View** | Google, Microsoft, Intuit |
-| 🟥 **Sunnyvale** | Amazon, LinkedIn, Yahoo! |
+| 🟥 **Sunnyvale** | Amazon, LinkedIn, Yahoo!, Uber |
 | 🟩 **Santa Clara** | Nvidia, Intel, AMD, Qualcomm |
 | 🟦 **San Jose** | Cisco, Adobe, Broadcom |
 | ⬜ **Cupertino** | Apple |
