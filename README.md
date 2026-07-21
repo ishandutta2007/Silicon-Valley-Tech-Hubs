@@ -101,7 +101,7 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "type": "Feature",
       "properties": {
         "name": "Mountain View",
-        "companies": "Google, Intuit",
+        "companies": "Google, Microsoft, Intuit",
         "marker-color": "#e74c3c",
         "marker-size": "medium"
       },
@@ -114,7 +114,7 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "type": "Feature",
       "properties": {
         "name": "Sunnyvale",
-        "companies": "LinkedIn, Yahoo!",
+        "companies": "Amazon, LinkedIn, Yahoo!",
         "marker-color": "#e91e63",
         "marker-size": "medium"
       },
@@ -127,7 +127,7 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "type": "Feature",
       "properties": {
         "name": "Santa Clara",
-        "companies": "Nvidia, Intel, AMD",
+        "companies": "Nvidia, Intel, AMD, Qualcomm",
         "marker-color": "#76b900",
         "marker-size": "medium"
       },
@@ -140,7 +140,7 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "type": "Feature",
       "properties": {
         "name": "San Jose",
-        "companies": "Cisco, Adobe",
+        "companies": "Cisco, Adobe, Broadcom",
         "marker-color": "#00bcd4",
         "marker-size": "medium"
       },
@@ -187,10 +187,10 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
 | 🟩 **Menlo Park** | Meta (Facebook) |
 | 🟨 **Palo Alto** | Tesla, HP |
 | 🟧 **Milpitas** | KLA Corporation |
-| 🟥 **Mountain View** | Google, Intuit |
-| 🟥 **Sunnyvale** | LinkedIn, Yahoo! |
-| 🟩 **Santa Clara** | Nvidia, Intel, AMD |
-| 🟦 **San Jose** | Cisco, Adobe |
+| 🟥 **Mountain View** | Google, Microsoft, Intuit |
+| 🟥 **Sunnyvale** | Amazon, LinkedIn, Yahoo! |
+| 🟩 **Santa Clara** | Nvidia, Intel, AMD, Qualcomm |
+| 🟦 **San Jose** | Cisco, Adobe, Broadcom |
 | ⬜ **Cupertino** | Apple |
 | 🟫 **Los Gatos** | Netflix |
 
