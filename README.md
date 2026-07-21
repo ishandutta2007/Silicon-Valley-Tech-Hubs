@@ -19,63 +19,159 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
   "features": [
     {
       "type": "Feature",
-      "properties": { "name": "San Mateo" },
-      "geometry": { "type": "Point", "coordinates": [-122.3255, 37.5630] }
+      "properties": {
+        "name": "San Mateo",
+        "companies": "Snowflake, Roblox",
+        "marker-color": "#2ecc71",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.3255, 37.5630]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Fremont" },
-      "geometry": { "type": "Point", "coordinates": [-121.9886, 37.5485] }
+      "properties": {
+        "name": "Fremont",
+        "companies": "Tesla Factory, Lam Research",
+        "marker-color": "#3498db",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.9886, 37.5485]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Redwood City" },
-      "geometry": { "type": "Point", "coordinates": [-122.2364, 37.4852] }
+      "properties": {
+        "name": "Redwood City",
+        "companies": "Oracle*, Box",
+        "marker-color": "#9b59b6",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2364, 37.4852]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Menlo Park" },
-      "geometry": { "type": "Point", "coordinates": [-122.1818, 37.4596] }
+      "properties": {
+        "name": "Menlo Park",
+        "companies": "Meta (Facebook)",
+        "marker-color": "#1abc9c",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.1818, 37.4596]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Palo Alto" },
-      "geometry": { "type": "Point", "coordinates": [-122.1430, 37.4419] }
+      "properties": {
+        "name": "Palo Alto",
+        "companies": "Tesla, HP",
+        "marker-color": "#f1c40f",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.1430, 37.4419]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Milpitas" },
-      "geometry": { "type": "Point", "coordinates": [-121.8996, 37.4323] }
+      "properties": {
+        "name": "Milpitas",
+        "companies": "KLA Corporation",
+        "marker-color": "#e67e22",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.8996, 37.4323]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Mountain View" },
-      "geometry": { "type": "Point", "coordinates": [-122.0839, 37.3861] }
+      "properties": {
+        "name": "Mountain View",
+        "companies": "Google, Intuit",
+        "marker-color": "#e74c3c",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0839, 37.3861]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Sunnyvale" },
-      "geometry": { "type": "Point", "coordinates": [-122.0363, 37.3688] }
+      "properties": {
+        "name": "Sunnyvale",
+        "companies": "LinkedIn, Yahoo!",
+        "marker-color": "#e91e63",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0363, 37.3688]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Santa Clara" },
-      "geometry": { "type": "Point", "coordinates": [-121.9552, 37.3541] }
+      "properties": {
+        "name": "Santa Clara",
+        "companies": "Nvidia, Intel, AMD",
+        "marker-color": "#76b900",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.9552, 37.3541]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "San Jose" },
-      "geometry": { "type": "Point", "coordinates": [-121.8881, 37.3348] }
+      "properties": {
+        "name": "San Jose",
+        "companies": "Cisco, Adobe",
+        "marker-color": "#00bcd4",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.8881, 37.3348]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Cupertino" },
-      "geometry": { "type": "Point", "coordinates": [-122.0322, 37.3230] }
+      "properties": {
+        "name": "Cupertino",
+        "companies": "Apple",
+        "marker-color": "#a3aaae",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.0322, 37.3230]
+      }
     },
     {
       "type": "Feature",
-      "properties": { "name": "Los Gatos" },
-      "geometry": { "type": "Point", "coordinates": [-121.9624, 37.2358] }
+      "properties": {
+        "name": "Los Gatos",
+        "companies": "Netflix",
+        "marker-color": "#b71c1c",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-121.9624, 37.2358]
+      }
     }
   ]
 }
