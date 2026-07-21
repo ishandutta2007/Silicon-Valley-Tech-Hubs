@@ -3,6 +3,12 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
 
 ## Silicon Valley Tech Hubs (North to South)
 
+
+### Controls:
+
+- Zoom In: Double Click
+- Zoom Out: Shift + Double Click
+
 ```geojson
 {
   "type": "FeatureCollection",
