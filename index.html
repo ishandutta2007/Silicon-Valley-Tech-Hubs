@@ -415,7 +415,8 @@
                     "properties": {
                         "name": "San Mateo",
                         "companies": "Snowflake, Roblox",
-                        "order": 1
+                        "order": 1,
+                        "color": "#10b981"
                     },
                     "geometry": {
                         "type": "Point",
@@ -428,7 +429,8 @@
                     "properties": {
                         "name": "Fremont",
                         "companies": "Tesla Factory, Lam Research",
-                        "order": 2
+                        "order": 2,
+                        "color": "#06b6d4"
                     },
                     "geometry": {
                         "type": "Point",
@@ -441,7 +443,8 @@
                     "properties": {
                         "name": "Redwood City",
                         "companies": "Oracle*, Box",
-                        "order": 3
+                        "order": 3,
+                        "color": "#6366f1"
                     },
                     "geometry": {
                         "type": "Point",
@@ -454,7 +457,8 @@
                     "properties": {
                         "name": "Menlo Park",
                         "companies": "Meta (Facebook)",
-                        "order": 4
+                        "order": 4,
+                        "color": "#0ea5e9"
                     },
                     "geometry": {
                         "type": "Point",
@@ -467,7 +471,8 @@
                     "properties": {
                         "name": "Palo Alto",
                         "companies": "Tesla, HP",
-                        "order": 5
+                        "order": 5,
+                        "color": "#f59e0b"
                     },
                     "geometry": {
                         "type": "Point",
@@ -480,7 +485,8 @@
                     "properties": {
                         "name": "Milpitas",
                         "companies": "KLA Corporation",
-                        "order": 6
+                        "order": 6,
+                        "color": "#8b5cf6"
                     },
                     "geometry": {
                         "type": "Point",
@@ -493,7 +499,8 @@
                     "properties": {
                         "name": "Mountain View",
                         "companies": "Google, Intuit",
-                        "order": 7
+                        "order": 7,
+                        "color": "#ec4899"
                     },
                     "geometry": {
                         "type": "Point",
@@ -506,7 +513,8 @@
                     "properties": {
                         "name": "Sunnyvale",
                         "companies": "LinkedIn, Yahoo!",
-                        "order": 8
+                        "order": 8,
+                        "color": "#f43f5e"
                     },
                     "geometry": {
                         "type": "Point",
@@ -519,7 +527,8 @@
                     "properties": {
                         "name": "Santa Clara",
                         "companies": "Nvidia, Intel, AMD",
-                        "order": 9
+                        "order": 9,
+                        "color": "#f97316"
                     },
                     "geometry": {
                         "type": "Point",
@@ -532,7 +541,8 @@
                     "properties": {
                         "name": "San Jose",
                         "companies": "Cisco, Adobe",
-                        "order": 10
+                        "order": 10,
+                        "color": "#22d3ee"
                     },
                     "geometry": {
                         "type": "Point",
@@ -545,7 +555,8 @@
                     "properties": {
                         "name": "Cupertino",
                         "companies": "Apple",
-                        "order": 11
+                        "order": 11,
+                        "color": "#84cc16"
                     },
                     "geometry": {
                         "type": "Point",
@@ -558,7 +569,8 @@
                     "properties": {
                         "name": "Los Gatos",
                         "companies": "Netflix",
-                        "order": 12
+                        "order": 12,
+                        "color": "#d946ef"
                     },
                     "geometry": {
                         "type": "Point",
@@ -589,12 +601,25 @@
         const markersMap = {};
         const cardElements = {};
 
-        // Custom marker setup
-        const createMarkerIcon = (isActive = false) => {
+        // Custom marker setup with dynamic city colors
+        const createMarkerIcon = (color, isActive = false) => {
+            const size = isActive ? 18 : 14;
+            const borderGlow = isActive 
+                ? `box-shadow: 0 0 12px ${color}, 0 0 20px ${color}; transform: scale(1.25);` 
+                : `box-shadow: 0 0 8px ${color};`;
             return L.divIcon({
                 className: `custom-marker ${isActive ? 'active-marker' : ''}`,
-                iconSize: isActive ? [18, 18] : [14, 14],
-                iconAnchor: isActive ? [9, 9] : [7, 7]
+                html: `<div style="
+                    width: ${size}px; 
+                    height: ${size}px; 
+                    background-color: ${color}; 
+                    border: 2px solid #ffffff; 
+                    border-radius: 50%;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    ${borderGlow}
+                "></div>`,
+                iconSize: [size, size],
+                iconAnchor: [size/2, size/2]
             });
         };
 
@@ -603,7 +628,7 @@
             pointToLayer: function(feature, latlng) {
                 const id = feature.id;
                 const marker = L.marker(latlng, {
-                    icon: createMarkerIcon(false)
+                    icon: createMarkerIcon(feature.properties.color, false)
                 });
                 markersMap[id] = marker;
                 return marker;
@@ -614,7 +639,7 @@
                 // Create custom styled popup
                 const popupContent = `
                     <div class="popup-card">
-                        <div class="popup-title">${props.name}</div>
+                        <div class="popup-title" style="color: ${props.color}">${props.name}</div>
                         <div class="popup-desc">Major Tech Employers:</div>
                         <div class="popup-companies">${props.companies}</div>
                     </div>
@@ -643,8 +668,8 @@
             
             card.innerHTML = `
                 <div class="hub-title">
-                    <span>${props.name}</span>
-                    <span class="hub-tag">#${props.order}</span>
+                    <span><span style="color: ${props.color}; margin-right: 8px;">●</span>${props.name}</span>
+                    <span class="hub-tag" style="background: ${props.color}25; color: ${props.color}; border: 1px solid ${props.color}50;">#${props.order}</span>
                 </div>
                 <div class="hub-companies-title">Major Companies</div>
                 <div class="hub-companies">${props.companies}</div>
@@ -667,7 +692,10 @@
             // Remove previous active state
             if (currentlyHighlighted) {
                 const prevMarker = markersMap[currentlyHighlighted];
-                if (prevMarker) prevMarker.setIcon(createMarkerIcon(false));
+                const prevFeature = geojsonData.features.find(f => f.id === currentlyHighlighted);
+                if (prevMarker && prevFeature) {
+                    prevMarker.setIcon(createMarkerIcon(prevFeature.properties.color, false));
+                }
                 
                 const prevCard = cardElements[currentlyHighlighted];
                 if (prevCard) prevCard.classList.remove('active');
@@ -677,7 +705,10 @@
             currentlyHighlighted = id;
             
             const marker = markersMap[id];
-            if (marker) marker.setIcon(createMarkerIcon(true));
+            const currentFeature = geojsonData.features.find(f => f.id === id);
+            if (marker && currentFeature) {
+                marker.setIcon(createMarkerIcon(currentFeature.properties.color, true));
+            }
             
             const card = cardElements[id];
             if (card) {
@@ -699,7 +730,10 @@
         map.on('popupclose', () => {
             if (currentlyHighlighted) {
                 const prevMarker = markersMap[currentlyHighlighted];
-                if (prevMarker) prevMarker.setIcon(createMarkerIcon(false));
+                const prevFeature = geojsonData.features.find(f => f.id === currentlyHighlighted);
+                if (prevMarker && prevFeature) {
+                    prevMarker.setIcon(createMarkerIcon(prevFeature.properties.color, false));
+                }
                 
                 const prevCard = cardElements[currentlyHighlighted];
                 if (prevCard) prevCard.classList.remove('active');

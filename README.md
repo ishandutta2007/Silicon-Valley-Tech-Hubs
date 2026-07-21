@@ -163,18 +163,18 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
 
 | City | Major Companies |
 | :--- | :--- |
-| **San Mateo** | Snowflake, Roblox |
-| **Fremont** | Tesla Factory, Lam Research |
-| **Redwood City** | Oracle*, Box |
-| **Menlo Park** | Meta (Facebook) |
-| **Palo Alto** | Tesla, HP |
-| **Milpitas** | KLA Corporation |
-| **Mountain View** | Google, Intuit |
-| **Sunnyvale** | LinkedIn, Yahoo! |
-| **Santa Clara** | Nvidia, Intel, AMD |
-| **San Jose** | Cisco, Adobe |
-| **Cupertino** | Apple |
-| **Los Gatos** | Netflix |
+| <span style="color: #10b981;">●</span> **San Mateo** | Snowflake, Roblox |
+| <span style="color: #06b6d4;">●</span> **Fremont** | Tesla Factory, Lam Research |
+| <span style="color: #6366f1;">●</span> **Redwood City** | Oracle*, Box |
+| <span style="color: #0ea5e9;">●</span> **Menlo Park** | Meta (Facebook) |
+| <span style="color: #f59e0b;">●</span> **Palo Alto** | Tesla, HP |
+| <span style="color: #8b5cf6;">●</span> **Milpitas** | KLA Corporation |
+| <span style="color: #ec4899;">●</span> **Mountain View** | Google, Intuit |
+| <span style="color: #f43f5e;">●</span> **Sunnyvale** | LinkedIn, Yahoo! |
+| <span style="color: #f97316;">●</span> **Santa Clara** | Nvidia, Intel, AMD |
+| <span style="color: #22d3ee;">●</span> **San Jose** | Cisco, Adobe |
+| <span style="color: #84cc16;">●</span> **Cupertino** | Apple |
+| <span style="color: #d946ef;">●</span> **Los Gatos** | Netflix |
 
 *\*Note: Oracle moved its official headquarters to Austin, Texas, but maintains a significant historic presence in Redwood City.*
 
