@@ -1,4 +1,6 @@
 # Silicon-Valley-Tech-Hubs
+An interactive web map with custom zoom-in and zoom-out controls has been created in [index.html](file:///C:/Users/ishan/Documents/Projects/Silicon-Valley-Tech-Hubs/index.html). Open it in any browser to explore the hubs dynamically.
+
 ## Silicon Valley Tech Hubs (North to South)
 
 ```geojson
