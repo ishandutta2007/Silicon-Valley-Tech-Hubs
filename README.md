@@ -18,7 +18,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 1,
       "properties": {
         "name": "San Mateo",
-        "companies": "Snowflake, Roblox"
+        "companies": "Snowflake, Roblox",
+        "marker-color": "#2ecc71",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -30,7 +32,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 2,
       "properties": {
         "name": "Fremont",
-        "companies": "Tesla Factory, Lam Research"
+        "companies": "Tesla Factory, Lam Research",
+        "marker-color": "#3498db",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -42,7 +46,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 3,
       "properties": {
         "name": "Redwood City",
-        "companies": "Oracle*, Box"
+        "companies": "Oracle*, Box",
+        "marker-color": "#9b59b6",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -54,7 +60,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 4,
       "properties": {
         "name": "Menlo Park",
-        "companies": "Meta (Facebook)"
+        "companies": "Meta (Facebook)",
+        "marker-color": "#1abc9c",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +74,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 5,
       "properties": {
         "name": "Palo Alto",
-        "companies": "Tesla, HP"
+        "companies": "Tesla, HP",
+        "marker-color": "#f1c40f",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -78,7 +88,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 6,
       "properties": {
         "name": "Milpitas",
-        "companies": "KLA Corporation"
+        "companies": "KLA Corporation",
+        "marker-color": "#e67e22",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -90,7 +102,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 7,
       "properties": {
         "name": "Mountain View",
-        "companies": "Google, Intuit"
+        "companies": "Google, Intuit",
+        "marker-color": "#e74c3c",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -102,7 +116,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 8,
       "properties": {
         "name": "Sunnyvale",
-        "companies": "LinkedIn, Yahoo!"
+        "companies": "LinkedIn, Yahoo!",
+        "marker-color": "#e91e63",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -114,7 +130,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 9,
       "properties": {
         "name": "Santa Clara",
-        "companies": "Nvidia, Intel, AMD"
+        "companies": "Nvidia, Intel, AMD",
+        "marker-color": "#76b900",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -126,7 +144,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 10,
       "properties": {
         "name": "San Jose",
-        "companies": "Cisco, Adobe"
+        "companies": "Cisco, Adobe",
+        "marker-color": "#00bcd4",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -138,7 +158,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 11,
       "properties": {
         "name": "Cupertino",
-        "companies": "Apple"
+        "companies": "Apple",
+        "marker-color": "#a3aaae",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -150,7 +172,9 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
       "id": 12,
       "properties": {
         "name": "Los Gatos",
-        "companies": "Netflix"
+        "companies": "Netflix",
+        "marker-color": "#b71c1c",
+        "marker-size": "medium"
       },
       "geometry": {
         "type": "Point",
@@ -166,15 +190,15 @@ An interactive web map with custom zoom-in and zoom-out controls has been create
 | 🟩 **San Mateo** | Snowflake, Roblox |
 | 🟦 **Fremont** | Tesla Factory, Lam Research |
 | 🟪 **Redwood City** | Oracle*, Box |
-| 🟦 **Menlo Park** | Meta (Facebook) |
+| 🟩 **Menlo Park** | Meta (Facebook) |
 | 🟨 **Palo Alto** | Tesla, HP |
-| 🟪 **Milpitas** | KLA Corporation |
+| 🟧 **Milpitas** | KLA Corporation |
 | 🟥 **Mountain View** | Google, Intuit |
 | 🟥 **Sunnyvale** | LinkedIn, Yahoo! |
-| 🟧 **Santa Clara** | Nvidia, Intel, AMD |
+| 🟩 **Santa Clara** | Nvidia, Intel, AMD |
 | 🟦 **San Jose** | Cisco, Adobe |
-| 🟩 **Cupertino** | Apple |
-| 🟪 **Los Gatos** | Netflix |
+| ⬜ **Cupertino** | Apple |
+| 🟫 **Los Gatos** | Netflix |
 
 *\*Note: Oracle moved its official headquarters to Austin, Texas, but maintains a significant historic presence in Redwood City.*
 

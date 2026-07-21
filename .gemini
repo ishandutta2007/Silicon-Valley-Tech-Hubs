@@ -3,3 +3,5 @@ i have just a sample geojson, please modify it with a geojson which shows all th
 there are few cities missing in the table below , add them with big tech companies in them
 
 Reload code after my changes. Can you use different color to indicate different cities on map. also use same legend color in the table below along side that citi name in table below.
+
+Can you make the points in geojson map show in the same color as indicated in the corresponding table below.
