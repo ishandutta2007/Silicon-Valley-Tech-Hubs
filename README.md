@@ -1,6 +1,25 @@
 # Silicon-Valley-Tech-Hubs
 ## Silicon Valley Tech Hubs (North to South)
 
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "name": "Central Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.9654, 40.7829]
+      }
+    }
+  ]
+}
+```
+
 | City | Major Companies |
 | :--- | :--- |
 | **Redwood City** | Oracle*, Box |
